@@ -1,4 +1,5 @@
 import transport.Car;
+import transport.Train;
 
 import java.security.Key;
 
@@ -9,20 +10,19 @@ public class Main {
         Car BMW = new Car("BMW", "Z8", 3.0, "Черный", 2021, "Германия", " автомат " , "  хэтчбек ", " а188аа 178", 4, " Зимняя", 5,15000,"1234567890");
         Car Kia= new Car(" Kia", " Sportage 4-го поколения", 2.4, " Красный", 2018, "Южная Корея"," автомат " , "  хэтчбек ", " о188оо 171", 5, " Зимняя" , 5,15000,"1234567890");
         Car Hyundai = new Car("Hyundai", " Avante", 1.6 , "Оранжевый", 2016, "Южная Корея", " Механическая " , " седан ", "000" , 5, "Летняя", 5,15000,"1234567890");
-      //  Car.Key NN =  new Car.Key(null, "Без ключа");
-        Car.Insurance Hyundai1 = new Car.Insurance(5,15000,"123");
 
-
-
-        Hyundai.cars();
+        //Hyundai.cars();
        // Lada.number();
        // Lada.SeasonTires();
-        Kia.cars();
-        BMW.cars();
-        Audi.cars();
-        BMW.getKey();
-      //  Lada.cars();
+      //  Kia.cars();
+        //BMW.cars();
+       Audi.cars();
+        //BMW.getKey();
 
+
+        Train lactochka = new Train("Ласточка", " B-901 ", 2011, "Россия", 3500,"Белорусского вокзала"," Минск-Пассажирский", 11, 310);
+        Train leningrad = new Train("Ленинград", "D-125" , 2019, "Россия",1700,"Ленинградского вокзала", "Ленинград-Пассажирский", 8,270);
+        lactochka.train();
     }
 }
 
