@@ -3,7 +3,7 @@ package transport;
 public class Train extends Transport {
     private  int thePriceOfTheTrip;
     private  int travelTime;
-    private  String NameOfTheDepartureStation;
+    private  String nameOfTheDepartureStation;
     private  String finalStop;
     private  int numberOfWagons;
 
@@ -13,20 +13,26 @@ public class Train extends Transport {
     }
 
 
-    public  Train (int thePriceOfTheTrip,String NameOfTheDepartureStation,String finalStop, int numberOfWagons){
-        super();
+ //   public  Train (int thePriceOfTheTrip,String NameOfTheDepartureStation,String finalStop, int numberOfWagons){
+  //      super();
+
+ //   }
+    public  Train (String brand, String model, int yearOfProduction ,String countryOfManufacture,int thePriceOfTheTrip,String nameOfTheDepartureStation,String finalStop, int numberOfWagons, int maximumMovementSpeed){
+       super(brand,model,yearOfProduction,countryOfManufacture,maximumMovementSpeed);
+       this.thePriceOfTheTrip =thePriceOfTheTrip;
+        this.nameOfTheDepartureStation = nameOfTheDepartureStation;
+        this.travelTime = travelTime;
+       this.numberOfWagons=numberOfWagons;
+       this.finalStop=finalStop;
+
+
 
     }
-    public  Train (String brand, String model, int yearOfProduction ,String countryOfManufacture,int thePriceOfTheTrip,String NameOfTheDepartureStation,String finalStop, int numberOfWagons, int maximumMovementSpeed){
-        super();
-
-
-    }
-
 
     public Train(String brand, String model, int yearOfProduction, String countryOfManufacture, String bodyColor) {
         super(brand, model, yearOfProduction, countryOfManufacture, bodyColor);
-        brand=brand;
+
+
     }
 
     public int getThePriceOfTheTrip() {
@@ -50,13 +56,14 @@ public class Train extends Transport {
     }
 
     public String getNameOfTheDepartureStation() {
-        return NameOfTheDepartureStation;
+        return nameOfTheDepartureStation;
     }
 
     public void setNameOfTheDepartureStation(String nameOfTheDepartureStation) {
         if (nameOfTheDepartureStation == null || nameOfTheDepartureStation.isEmpty() || nameOfTheDepartureStation.isBlank())
             System.out.println("Неверное значение");
-        NameOfTheDepartureStation = nameOfTheDepartureStation;
+        this.nameOfTheDepartureStation = nameOfTheDepartureStation;
+
     }
 
     public String getFinalStop() {
@@ -80,6 +87,11 @@ public class Train extends Transport {
     }
     public void train(){
         System.out.println("Поезд " + getbrand() + " модель " + getModel() + " года выпуска " + getYearOfProduction() + " скорость передвижения " + getMaximumMovementSpeed() + " отходит от " + getNameOfTheDepartureStation() + " прибывает на " + getFinalStop() + " цена поездки " + getThePriceOfTheTrip() + " у поезда " + getNumberOfWagons() + " вагонов");
+    }
+
+    public void refill(){
+        System.out.println(" нужно заправлять дизелем ");
+
     }
 
 

@@ -8,9 +8,23 @@ import java.util.regex.Pattern;
 
 public class Car extends Transport {
 
+    @Override
+    public void refill() {
+        System.out.println("можно заправлять бензином, дизелем на заправке или заряжать на специальных электропарковках, если это электрокар");
+
+    }
+
     public static class Key {
         private String remoteLaunch;
         private String keylessAccess;
+
+        public String getRemoteLaunch() {
+            return remoteLaunch;
+        }
+
+        public String getKeylessAccess() {
+            return keylessAccess;
+        }
 
         public Key(String remoteLaunch, String keylessAccess) {
            this.remoteLaunch = remoteLaunch;
@@ -24,13 +38,31 @@ public class Car extends Transport {
                     System.out.println("Данные введены неверно");
                 }
             }
+
         }
     }
     public static class Insurance{
         private long validityPeriod;
         private int cost;
         private  String number;
-        public Insurance (long validityPeriod,int cost,String number) {
+
+        public long getValidityPeriod() {
+            return validityPeriod;
+        }
+
+        public int getCost() {
+            return cost;
+        }
+
+        public String getNumber() {
+            return number;
+        }
+
+
+
+
+
+        public Insurance (long validityPeriod, int cost, String number) {
             this.validityPeriod = validityPeriod;
             this.cost = cost;
             this.number = number;
@@ -43,8 +75,11 @@ public class Car extends Transport {
                 }
                 if (number == null || number.isEmpty() || number.isBlank()) {
                     System.out.println("Данные введены неверно");
+
                 }
             }
+
+
 
         }
 
@@ -63,10 +98,19 @@ public class Car extends Transport {
 
         public Car(String brand, String model, double engineCapacity, String bodyColor, int yearOfProduction, String countryOfManufacture, String transmission, String bodyType, String registrationNumber, int numberOfSeats, String rubber,long validityPeriod,int cost,String number) {
             super(brand, model, yearOfProduction, countryOfManufacture, bodyColor);
+            validityPeriod = validityPeriod;
+            this.engineCapacity =engineCapacity;
+            this.rubber =rubber;
+            this.transmission =transmission;
+            this.bodyType =bodyType;
+            this.registrationNumber =registrationNumber;
+            this.numberOfSeats =numberOfSeats;
 
         }
 
-        public String getBodyType() {
+
+
+    public String getBodyType() {
             return bodyType;
         }
 
@@ -117,7 +161,8 @@ public class Car extends Transport {
         }
 
     public Insurance getInsurance() {
-        return insurance;
+
+            return insurance;
     }
 
     public void cars() {
@@ -169,7 +214,6 @@ public class Car extends Transport {
         } else {
             System.out.println(registrationNumber + " номер страховки некорректен ");
         }
-
     }
     }
 

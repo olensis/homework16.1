@@ -28,6 +28,13 @@ public abstract class  Transport {
         this.bodyColor = bodyColor;
         this.maximumMovementSpeed = maximumMovementSpeed;
     }
+    public Transport(String brand, String model, int yearOfProduction, String countryOfManufacture, int maximumMovementSpeed) {
+        Brand = brand;
+        Model = model;
+        this.yearOfProduction = yearOfProduction;
+        this.countryOfManufacture = countryOfManufacture;
+        this.maximumMovementSpeed = maximumMovementSpeed;
+    }
 
     public String getbrand() {
         return Brand;
@@ -80,4 +87,12 @@ public abstract class  Transport {
             System.out.println("Неверное значение");
         this.maximumMovementSpeed = maximumMovementSpeed;
     }
+    public void Tpansport(){
+        System.out.println("Данные о транспорте" + getClass());
+    }
+
+    public abstract void refill();
+
+
+
 }
