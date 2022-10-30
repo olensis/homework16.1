@@ -59,8 +59,14 @@ public class Car extends Transport {
         }
 
 
-
-
+        @Override
+        public String toString() {
+            return "Insurance{" +
+                    "validityPeriod=" + validityPeriod +
+                    ", cost=" + cost +
+                    ", number='" + number + '\'' +
+                    '}';
+        }
 
         public Insurance (long validityPeriod, int cost, String number) {
             this.validityPeriod = validityPeriod;
@@ -96,15 +102,16 @@ public class Car extends Transport {
         private   int maximumMovementSpeed;
 
 
-        public Car(String brand, String model, double engineCapacity, String bodyColor, int yearOfProduction, String countryOfManufacture, String transmission, String bodyType, String registrationNumber, int numberOfSeats, String rubber,long validityPeriod,int cost,String number) {
+    public Car(String brand, String model, double engineCapacity, String bodyColor, int yearOfProduction, String countryOfManufacture, String transmission, String bodyType, String registrationNumber, int numberOfSeats, String rubber, long validityPeriod, int cost, String number, Insurance insurance ) {
             super(brand, model, yearOfProduction, countryOfManufacture, bodyColor);
-            validityPeriod = validityPeriod;
             this.engineCapacity =engineCapacity;
             this.rubber =rubber;
             this.transmission =transmission;
             this.bodyType =bodyType;
             this.registrationNumber =registrationNumber;
             this.numberOfSeats =numberOfSeats;
+            this.insurance = insurance;
+
 
         }
 
@@ -165,8 +172,15 @@ public class Car extends Transport {
             return insurance;
     }
 
+    @Override
+    public String toString() {
+        return "Car{" +
+                "insurance=" + insurance +
+                '}';
+    }
+
     public void cars() {
-            System.out.println("Марка автомобиля " + getbrand() + ", модель " + getModel()+ ", год выпуска " + getYearOfProduction() + ", произведена в " + getCountryOfManufacture() + ", объем двигателя " + engineCapacity + " л., цвет кузова " + getBodyColor() + " коробка передач " + transmission + " тип кузова " + bodyType + " регистрационный номер " + registrationNumber + " кол-во мест " + numberOfSeats + " резина " + rubber + " данные по страховке  " );
+            System.out.println("Марка автомобиля " + getbrand() + ", модель " + getModel()+ ", год выпуска " + getYearOfProduction() + ", произведена в " + getCountryOfManufacture() + ", объем двигателя " + engineCapacity + " л., цвет кузова " + getBodyColor() + " коробка передач " + transmission + " тип кузова " + bodyType + " регистрационный номер " + registrationNumber + " кол-во мест " + numberOfSeats + " резина " + rubber + " данные по страховке  " + insurance );
 
         }
 
