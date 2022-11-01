@@ -19,12 +19,14 @@ public class Birds extends Animals {
 
     @Override
     protected void go() {
+        System.out.println( " Летаю ");
 
     }
 
 
     @Override
     protected void eat() {
+        System.out.println(" Я ем");
 
     }
     protected  void hunting(){

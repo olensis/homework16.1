@@ -14,6 +14,7 @@ public class Amphibians extends Animals {
 
     @Override
     protected void go() {
+        System.out.println(" Могу и плавать и ходить");
 
     }
 
@@ -23,12 +24,13 @@ public class Amphibians extends Animals {
 
     @Override
     protected void eat() {
+        System.out.println(" Ем");
 
     }
     protected  void hunting(){
         System.out.println(" Я охочусь");
     }
-    public void   amphibians (){
+    public void   printAmphibians (){
         System.out.println(" Данные о животном: " + getName() +  " " + getAge()+ " лет " + " живет в " +  getLivingEnvironment() + " относится к классу" + getClass()  );
     }
 

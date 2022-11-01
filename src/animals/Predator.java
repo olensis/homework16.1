@@ -17,16 +17,18 @@ public class Predator extends Mammals{
     }
 
     protected void go() {
+        System.out.println( " Я хожу где хочу");
 
     }
 
     protected void eat() {
+        System.out.println( " Я ем мясо");
 
     }
     protected void hunting(){
         System.out.println(" Я охочусь");
     }
-    public void  predator (){
+    public void  printPredator (){
         System.out.println(" Данные о животном: " + getName() +  " " + getAge()+ " лет " + " живет в " +  getLivingEnvironment() + " скорость " +  getSpeed() + " питается "  +  getTypeOfFood() + " относится к классу" + getClass());;
     }
 

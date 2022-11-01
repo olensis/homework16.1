@@ -179,7 +179,7 @@ public class Car extends Transport {
                 '}';
     }
 
-    public void cars() {
+    public void printCarInfo() {
             System.out.println("Марка автомобиля " + getbrand() + ", модель " + getModel()+ ", год выпуска " + getYearOfProduction() + ", произведена в " + getCountryOfManufacture() + ", объем двигателя " + engineCapacity + " л., цвет кузова " + getBodyColor() + " коробка передач " + transmission + " тип кузова " + bodyType + " регистрационный номер " + registrationNumber + " кол-во мест " + numberOfSeats + " резина " + rubber + " данные по страховке  " + insurance );
 
         }
@@ -193,7 +193,7 @@ public class Car extends Transport {
             }
         }
 
-        public void number() {
+        public void currentNumber() {
 
             Matcher m = Pattern.compile("[A-Z]\\d\\d\\d[A-Z][A-Z]\\d\\d\\d").matcher(registrationNumber);
             if (m.find()) {
@@ -202,7 +202,7 @@ public class Car extends Transport {
                 System.out.println(registrationNumber + " не существующий регистрационный номер");
             }
         }
-        public void key (){
+        public void accessKey (){
             System.out.println("Доступ" + getKey());
 
     }
@@ -210,7 +210,7 @@ public class Car extends Transport {
         System.out.println("" + getInsurance());
 
     }
-    public boolean validityPeriod(LocalDateTime password_changed_at, long validityPeriod) {
+    public boolean actionValidityPeriod(LocalDateTime password_changed_at, long validityPeriod) {
 
          long Period = Duration.between(password_changed_at, LocalDate.now()).toDays();
 
@@ -221,7 +221,7 @@ public class Car extends Transport {
             return true;
         }
     }
-    public void numberInsurance(String number) {
+    public void currentNumberInsurance(String number) {
         Matcher m = Pattern.compile("\\d\\d\\d\\d\\d\\d\\d\\d\\d").matcher(number);
         if (m.find()) {
             System.out.println(number + " действительный регистрационный номер");

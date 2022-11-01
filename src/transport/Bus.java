@@ -15,7 +15,7 @@ public class  Bus extends Transport {
     public Bus(String brand, String model, int yearOfProduction, String countryOfManufacture, int maximumMovementSpeed) {
         super(brand, model, yearOfProduction, countryOfManufacture, maximumMovementSpeed);
     }
-    public void bus() {
+    public void printBusInfo() {
         System.out.println(" Модель " + getModel() + " марка " + getbrand() + " год выпуска " + getYearOfProduction()  );
     }
     public void refill(){

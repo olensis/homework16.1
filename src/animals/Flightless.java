@@ -19,16 +19,18 @@ public class Flightless  extends  Birds{
 
     @Override
     protected void go() {
+        super.go();
     }
 
     @Override
     protected void eat() {
+        super.eat();
     }
 
     protected void walk() {
         System.out.println(" Я гуляю ");
     }
-    public void  flightless (){
+    public void  printFlightless (){
         System.out.println(" Данные о животном: " + getName() +  " " + getAge()+ " лет " + " живет в " +  getLivingEnvironment() +  " тип передвижения  "  +  getTypeOfMovement () + " относится к классу" + getClass());
     }
 

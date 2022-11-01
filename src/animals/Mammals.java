@@ -31,10 +31,12 @@ public  class  Mammals extends Animals {
     }
     @Override
     protected void go() {
+        System.out.println( " Хожу где безопасно");
 
     }
     @Override
     protected void eat() {
+        System.out.println( " Я ем");
 
     }
 

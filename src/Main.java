@@ -7,7 +7,8 @@ import java.security.Key;
 
 public class Main {
     public static void main(String[] args) {
-       //  Car Lada = new Car("Lada", " Granta", 1.7, "Желтый", 2015, "Россия", "Механическая", "Седан", "A123BC164", 5,"Летняя",5,15000,"1234567890");
+      //  Car.Insurance Audi1 = new Car.Insurance(100, 1500, "11" );
+     //    Car Lada = new Car("Lada", " Granta", 1.7, "Желтый", 2015, "Россия", "Механическая", "Седан", "A123BC164", 5,"Летняя",5,15000,"1234567890", Car.Insurance Audi1);
         //  Car Audi = new Car("Audi", " A8 50 L TDI quattro", 3.0, "Черный", 2022, " Германия", " автомат", " седан", "111", 5,"Зимняя", 5,15000,"1234567890", " " );
       //  Car BMW = new Car("BMW", "Z8", 3.0, "Черный", 2021, "Германия", " автомат " , "  хэтчбек ", " а188аа 178", 4, " Зимняя", 5,15000,"1234567890");
         //Car Kia= new Car(" Kia", " Sportage 4-го поколения", 2.4, " Красный", 2018, "Южная Корея"," автомат " , "  хэтчбек ", " о188оо 171", 5, " Зимняя" , 5,15000,"1234567890");
@@ -21,7 +22,7 @@ public class Main {
         //BMW.cars();
       // Audi.cars();
         //BMW.getKey();
-        //   Car.Insurance Audi1 = new Car.Insurance(100, 1500, "11" );
+
         //System.out.println(" Данные по страховке" +  Audi1);
 
 

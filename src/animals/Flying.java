@@ -18,15 +18,17 @@ public class Flying  extends  Birds{
 
     @Override
     protected void go() {
+        System.out.println(" Я летаю где хочу");
     }
 
     @Override
     protected void eat() {
+        System.out.println( " Я ем");
     }
     protected void walk() {
         System.out.println(" Я летаю ");
     }
-    public void  flying (){
+    public void  printFlying (){
         System.out.println(" Данные о животном: " + getName() +  " " + getAge()+ " лет " + " живет в " +  getLivingEnvironment() +  " тип передвижения  "  +  getTypeOfMovement () + " относится к классу" + getClass());
     }
 

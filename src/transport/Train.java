@@ -85,7 +85,7 @@ public class Train extends Transport {
             System.out.println("Неверное значение");
         this.numberOfWagons = numberOfWagons;
     }
-    public void train(){
+    public void printTrain(){
         System.out.println("Поезд " + getbrand() + " модель " + getModel() + " года выпуска " + getYearOfProduction() + " скорость передвижения " + getMaximumMovementSpeed() + " отходит от " + getNameOfTheDepartureStation() + " прибывает на " + getFinalStop() + " цена поездки " + getThePriceOfTheTrip() + " у поезда " + getNumberOfWagons() + " вагонов");
     }
 

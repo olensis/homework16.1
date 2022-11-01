@@ -87,7 +87,7 @@ public abstract class  Transport {
             System.out.println("Неверное значение");
         this.maximumMovementSpeed = maximumMovementSpeed;
     }
-    public void Tpansport(){
+    public void printTpansport(){
         System.out.println("Данные о транспорте" + getClass());
     }
 

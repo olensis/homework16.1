@@ -21,13 +21,15 @@ public class Herbivores extends Mammals {
     }
 
     protected void go() {
+        System.out.println( " Хожу где безопасно");
 
     }
 
     protected void eat() {
+        System.out.println( " Я ем");
 
     }
-     public void  herbivores (){
+     public void  printFlyingHerbivores (){
         System.out.println(" Данные о животном: " + getName() +  " " + getAge()+ " лет " + " живет в " +  getLivingEnvironment() + " скорость " +  getSpeed() + " питается "  +  getTypeOfFood() + " относится к классу" + getClass());;
     }
 
