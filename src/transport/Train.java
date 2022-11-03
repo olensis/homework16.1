@@ -9,7 +9,7 @@ public class Train extends Transport {
 
     public Train(String brand, String model, int yearOfProduction) {
 
-        super(brand, model, yearOfProduction);
+        super(brand, model, yearOfProduction, countryOfManufacture);
     }
 
 

@@ -2,10 +2,11 @@ package transport;
 
 public class  Bus extends Transport {
     public Bus() {
+        super(brand, model, yearOfProduction, countryOfManufacture);
     }
 
     public Bus(String brand, String model, int yearOfProduction) {
-        super(brand, model, yearOfProduction);
+        super(brand, model, yearOfProduction, countryOfManufacture);
     }
 
     public Bus(String brand, String model, int yearOfProduction, String countryOfManufacture, String bodyColor) {

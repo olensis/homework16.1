@@ -1,23 +1,21 @@
 package transport;
 
 public abstract class  Transport {
-    private String Brand;
-    private String Model;
-    private int yearOfProduction;
-    private String countryOfManufacture;
+    private final String Brand;
+    private final String Model;
+    private final int yearOfProduction;
+    private final String countryOfManufacture;
     private String bodyColor;
     private int maximumMovementSpeed;
 
 
-    public Transport(){
+    public Transport(String brand, String model, int yearOfProduction, String countryOfManufacture){
 
 
-     }
-
-    public Transport(String brand, String model, int yearOfProduction) {
-        this.Brand = brand;
-        this.Model = model;
+        Brand = brand;
+        Model = model;
         this.yearOfProduction = yearOfProduction;
+        this.countryOfManufacture = countryOfManufacture;
     }
 
     public Transport(String brand, String model, int yearOfProduction, String countryOfManufacture, String bodyColor) {
@@ -40,20 +38,9 @@ public abstract class  Transport {
         return Brand;
     }
 
-    public void setBrand(String brand) {
-        if (brand == null || brand.isEmpty() || brand.isBlank())
-            System.out.println("Неверное значение");
-        Brand = brand;
-    }
 
     public String getModel() {
         return Model;
-    }
-
-    public void setModel(String model) {
-        if (model== null || model.isEmpty() || model.isBlank())
-            System.out.println("Неверное значение");
-        Model = model;
     }
 
     public int getYearOfProduction() {
